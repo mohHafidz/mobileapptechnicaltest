@@ -78,7 +78,17 @@ lib/
 
 ## 📱 Screenshots
 
-*Add your app screenshots here to showcase the beautiful UI!*
+<p align="center">
+  <img src="assets/Screenshot%202026-05-06%20210736.png" width="250" />
+  <img src="assets/Screenshot%202026-05-06%20210804.png" width="250" />
+  <img src="assets/Screenshot%202026-05-06%20210833.png" width="250" />
+</p>
+
+<p align="center">
+  <img src="assets/Screenshot%202026-05-06%20210942.png" width="250" />
+  <img src="assets/Screenshot%202026-05-06%20210959.png" width="250" />
+  <img src="assets/Screenshot%202026-05-06%20211023.png" width="250" />
+</p>
 
 ---
 
