@@ -79,7 +79,7 @@ lib/
 ## 🎥 Demo Video
 
 <p align="center">
-  <video src="assets/2026-05-07%2008-09-55.mp4" width="400" controls></video>
+  <video src="assets/2026-05-07 08-09-55.mp4" width="400" controls></video>
 </p>
 
 ## 📱 Screenshots
