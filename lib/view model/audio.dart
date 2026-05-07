@@ -196,4 +196,8 @@ class AudioController extends GetxController {
   // Progress stream untuk UI
   Stream<Duration> get positionStream => _player.positionStream;
   Stream<Duration?> get durationStream => _player.durationStream;
+
+  void seek(Duration position) {
+    _player.seek(position);
+  }
 }

@@ -113,27 +113,34 @@ class NowPlaying extends StatelessWidget {
 
                         return Column(
                           children: [
-                            Stack(
-                              children: [
-                                Container(
-                                  height: 8,
-                                  width: double.infinity,
-                                  decoration: BoxDecoration(
-                                    borderRadius: BorderRadius.circular(12),
-                                    color: const Color(0xFFE4E3D7),
-                                  ),
-                                ),
-                                FractionallySizedBox(
-                                  widthFactor: progress.clamp(0.0, 1.0),
-                                  child: Container(
-                                    height: 8,
-                                    decoration: BoxDecoration(
-                                      borderRadius: BorderRadius.circular(12),
-                                      color: AppColors.gold,
+                            SliderTheme(
+                              data: SliderTheme.of(context).copyWith(
+                                trackHeight: 6,
+                                thumbShape: const RoundSliderThumbShape(
+                                    enabledThumbRadius: 7),
+                                overlayShape: const RoundSliderOverlayShape(
+                                    overlayRadius: 14),
+                                activeTrackColor: AppColors.gold,
+                                inactiveTrackColor: const Color(0xFFE4E3D7),
+                                thumbColor: AppColors.gold,
+                                trackShape: const RectangularSliderTrackShape(),
+                              ),
+                              child: Slider(
+                                min: 0.0,
+                                max: duration.inMilliseconds.toDouble() > 0
+                                    ? duration.inMilliseconds.toDouble()
+                                    : 1.0,
+                                value: position.inMilliseconds.toDouble().clamp(
+                                      0.0,
+                                      duration.inMilliseconds.toDouble() > 0
+                                          ? duration.inMilliseconds.toDouble()
+                                          : 1.0,
                                     ),
-                                  ),
-                                ),
-                              ],
+                                onChanged: (value) {
+                                  audioController
+                                      .seek(Duration(milliseconds: value.toInt()));
+                                },
+                              ),
                             ),
                             SizedBox(height: 10),
                             Row(
