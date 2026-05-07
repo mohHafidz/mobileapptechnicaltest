@@ -79,7 +79,9 @@ lib/
 ## 🎥 Demo Video
 
 <p align="center">
-  <video src="assets/2026-05-07 08-09-55.mp4" width="400" controls></video>
+  <a href="https://drive.google.com/file/d/1EYawLVv_uZGh47r7HCpbyl4jGXqVMonv/view?usp=sharing" target="_blank">
+    <strong>🎬 Watch Demo Video on Google Drive</strong>
+  </a>
 </p>
 
 ## 📱 Screenshots
